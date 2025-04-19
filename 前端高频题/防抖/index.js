@@ -4,7 +4,16 @@
  * @return {Function}
  */
 var debounce = function (fn, t) {
-  return function (...args) {}
-}
+  let timer;
+  return function (...args) {
+    const context = this;
+    timer && clearTimeout(timer);
 
-module.exports = debounce
+    timer = setTimeout(() => {
+      fn.apply(context, args);
+      timer = null;
+    }, t);
+  };
+};
+
+module.exports = debounce;
