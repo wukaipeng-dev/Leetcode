@@ -1,24 +1,24 @@
-# LeetCode 高效刷题
+# LeetCode 高效刷题模板
 
-## 建立 LeetCode 刷题库的目的
+## 为什么要刷 LeetCode
 
-1. 培养算法思维
-2. 提高编程能力
+1. 培养**算法思维**
+2. 提高 Coding 能力
 3. 为面试做积累
+
+## 刷题流程
+
+1. 选择一道题，比如 `/前端高频题/防抖/题目.md`
+2. 做题：`/前端高频题/防抖/index.js`
+3. 运行测试用例：`npm run test --- /前端高频题/防抖/index.test.js`
+> 使用 Jest 作为测试框架
+1. 通过，提交到个人分支上，比如 `wukaipeng/debounce`，这样确保 `main` 分支上的 `index.js` 是初始状态，下次可以重复刷题
+
 
 ## 算法资源
 
 - [Hello 算法](https://www.hello-algo.com/)：算法教程，开源
 - [Fucking Algorithm](https://github.com/labuladong/fucking-algorithm)：解题文章，开源
-
-## 刷题流程
-
-1. 读题：/题目.md
-2. 做题：/index.js
-3. 测试：/index.test.js
-> 使用 AI 生成测试用例
-4. Jest 执行测试用例：`npm run test --- /路径/index.test.js`
-5. 通过，提交到 `wukaipeng/<题目>` 个人分支上
 
 ## 题目
 
