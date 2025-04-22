@@ -1,5 +1,11 @@
 # LeetCode 高效刷题
 
+## 建立 LeetCode 刷题库的目的
+
+1. 培养算法思维
+2. 提高编程能力
+3. 为面试做积累
+
 ## 算法资源
 
 - [Hello 算法](https://www.hello-algo.com/)：算法教程，开源
@@ -12,7 +18,7 @@
 3. 测试：/index.test.js
 > 使用 AI 生成测试用例
 4. Jest 执行测试用例：`npm run test --- /路径/index.test.js`
-5. 通过，提交到 `wukaipeng/<题目>` 分支
+5. 通过，提交到 `wukaipeng/<题目>` 个人分支上
 
 ## 题目
 
