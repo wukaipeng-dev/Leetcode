@@ -5,6 +5,8 @@
  * @returns {Array} 排序后的数组
  */
 function selectionSort(arr, compareFn = (a, b) => a - b) {
+  if (arr.length <= 1) return arr;
+
   for (let i = 0; i < arr.length - 1; i++) {
     let extremeValueIndex = i;
     for (let j = i + 1; j < arr.length; j++) {
@@ -12,14 +14,17 @@ function selectionSort(arr, compareFn = (a, b) => a - b) {
         extremeValueIndex = j;
       }
     }
-    if (extremeValueIndex !== i) {
-      const temp = arr[i];
-      arr[i] = arr[extremeValueIndex];
-      arr[extremeValueIndex] = temp;
-    }
+    swap(arr, i, extremeValueIndex);
   }
 
   return arr;
+}
+
+function swap(arr, i, j) {
+  if (i === j) return;
+  const temp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = temp;
 }
 
 module.exports = selectionSort;
